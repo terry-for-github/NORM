@@ -26,7 +26,7 @@ def get_data_folder():
     if hostname.startswith('visiongpu'):
         data_folder = "None"
     else:
-        data_folder = "./data"
+        data_folder = "/cifar100"
 
     if not os.path.isdir(data_folder):
         os.makedirs(data_folder)
